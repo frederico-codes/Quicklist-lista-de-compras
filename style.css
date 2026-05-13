@@ -170,6 +170,11 @@ body{
   background: var(--background-secondary, #FFF);
 }
 
+.item__body{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
 #lastButton{
   display: flex;
   gap: 8px;

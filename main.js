@@ -25,13 +25,15 @@ function hideToast() {
 
 function createItemElement(text) {
   const li = document.createElement("li");
+  const label = document.createElement("label");
   li.className = "item";
+  label.className = "item__body";
   li.innerHTML = `
     <label class="item__body">
       <input class="item__check" type="checkbox" />
       <span class="item__text"></span>
     </label>
-    <button class="item__remove" type="button"  ${text}">
+    <button class="item__remove" type="button" >
       <img src="assets/lixeira.svg" alt="ícone de lixeira" class="imgLixeira">
     </button>
   `;
